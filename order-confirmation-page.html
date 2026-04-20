@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candy Avenue</title>
+  <link rel="stylesheet" href="/src/scss/style.scss" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- INCLUDE HEADER -->
+  <div id="header"></div>
+
+  <!-- ORDER CONFIRMATION MESSAGE -->
+
+  <main class="container container--pall">
+    <section class="order-status flex">
+      <div class="order-status__icon">
+        <svg viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path class="circle"
+              d="M13 1C6.372583 1 1 6.372583 1 13s5.372583 12 12 12 12-5.372583 12-12S19.627417 1 13 1z" />
+            <path class="tick" d="M6.5 13.5L10 17 l8.808621-8.308621" />
+          </g>
+        </svg>
+      </div>
+      <div class="order-status__text">
+        <h1>Sweet!</h1>
+        <h2>Your order has been placed.</h2>
+        <p>
+          Your candy stash is officially reserved. <br />
+          Time to sit back, relax, and imagine all the sweetness coming your
+          way!
+        </p>
+      </div>
+      <div class="order-status__cta flex flex-ai-c">
+        <button class="cart-btn cart-btn--secondary" onclick="document.location = 'index.html'">
+          Continue Shopping
+        </button>
+        <!-- <a href="">View order details</a> -->
+      </div>
+    </section>
+  </main>
+
+  <!-- //// END OF //// ORDER CONFIRMATION MESSAGE -->
+
+  <!-- INCLUDE FOOTER -->
+  <div id="footer"></div>
+
+  <!-- INCLUDE SCRIPT LINK -->
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
+
+</html>

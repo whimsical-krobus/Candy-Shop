@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candy Avenue</title>
+  <link rel="stylesheet" href="/src/scss/style.scss" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  
+  <!-- INCLUDE HEADER -->
+  <div id="header"></div>
+<!-- 
+  <header class="header">
+    <div class="overlay has-fade"></div>
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c hide-for-desktop">
+      <a href="/" class="header__logo">
+        <img src="/img/logo.svg" alt="Candy Aneue 🍭" />
+      </a>
+
+      <a href="/product-page.html?favorites=true" class="header__icon"><img src="/img/icon_Favorites.svg"
+          alt="Favorites" /></a>
+
+      <a href="#" class="header__icon"><img src="/img/icon_ShoppingCartSimple.svg" alt="Shopping Cart" /></a>
+
+      <a id="btn-hamburger" href="#" class="header__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="header__menu has-fade">
+        <a href="product-page.html">All</a>
+        <a href="product-page.html?isNew=true">New</a>
+        <a href="product-page.html?category=lollipops">Lollipops</a>
+        <a href="product-page.html?category=chocolate">Chocolate</a>
+        <a href="product-page.html?category=gummies">Gummies</a>
+        <a href="product-page.html?category=licorice">Licorice</a>
+      </div>
+    </nav>
+    <div class="header__desktop hide-for-mobile">
+      <div class="header-box container">
+        <a href="#" class="logo">
+          <img src="/img/logo.svg" alt="Candy Avenue" />
+        </a>
+
+        <form id="search-form" class="flex">
+          <div class="search-wrapper">
+            <input type="text" placeholder="Search for goodies..." />
+            <button type="submit" class="search-btn">
+              <img src="/img/icon_search.svg" alt="Search" />
+            </button>
+          </div>
+        </form>
+
+        <div id="icon-box">
+          <a href="/product-page.html?favorites=true"><img src="/img/icon_Favorites.svg" alt="Favorites" /></a>
+
+          <div class="cart-badge-container">
+            <img id="cart-icon" src="/img/icon_ShoppingCartSimple.svg" alt="Shopping Cart" />
+            <span id="cart-badge"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-cart" id="mini-cart">
+        <h3>Products</h3>
+
+        <ul id="mini-cart-list"></ul>
+
+        <p>Sub-total: <span id="mini-cart-subtotal">0</span> SEK</p>
+        <p>Total: <span id="mini-cart-total">0</span> SEK</p>
+
+        <a href="checkout.html">
+          <button class="mini-cart__checkout-btn">PROCEED TO CHECKOUT</button>
+        </a>
+      </div>
+
+      <div class="nav__desktop">
+        <ul class="nav-list">
+          <li><a href="product-page.html">All</a></li>
+          <li><a href="product-page.html?isNew=true">New</a></li>
+          <li>
+            <a href="product-page.html?category=lollipops">Lollipops</a>
+          </li>
+          <li>
+            <a href="product-page.html?category=chocolate">Chocolate</a>
+          </li>
+          <li><a href="product-page.html?category=gummies">Gummies</a></li>
+          <li><a href="product-page.html?category=licorice">Licorice</a></li>
+        </ul>
+      </div>
+    </div>
+</header>
+ -->
+  <main class="container" id="details-page">
+    <section class="product-details flex container--px">
+      <button class="back" id="back-btn">
+        <img class="back__icon" src="img/icon_arrow_back.svg" alt="Back" />
+        Back
+      </button>
+
+      <div class="product flex">
+        <img class="product-details__img" id="product-img" src="/" alt="" />
+
+        <div>
+          <h1 class="product-details__title" id="product-title"></h1>
+
+          <div class="description">
+            <h2 class="description__heading">Product details</h2>
+            <p class="description__text" id="product-description"></p>
+          </div>
+
+          <div class="ingredients">
+            <h2 class="ingredients__heading">Ingredients</h2>
+            <ul class="ingredients__list">
+              <li>
+                <b>Vegan-friendly</b> 🌱 - no animal stuff here, just pure
+                candy joy
+              </li>
+              <li>May contain traces of <b>nuts</b></li>
+              <li>
+                Made in Hogwarts - handcrafted with love and a sprinkle of
+                chaos
+              </li>
+              <li>
+                <b>Warning:</b> Eating this may cause sugar-fueled giggles,
+                sticky fingers, and spontaneous happiness
+              </li>
+            </ul>
+          </div>
+
+          <div class="product-actions flex">
+            <div class="quantity flex flex-ai-c flex-jc-sb">
+              <button class="quantity__btn" id="quantity-btn-dec">-</button>
+              <p class="quantity__text" id="quantity-text">01</p>
+              <button class="quantity__btn" id="quantity-btn-inc">+</button>
+            </div>
+
+            <div class="product-actions__cta flex">
+              <button id="add-to-cart-btn" class="product-actions__add cart-btn cart-btn--secondary">
+                Add to cart
+                <img src="img/icon_ShoppingCartSimple.svg" alt="Shopping cart" />
+              </button>
+              <img class="favorite" id="fav-icon" src="" alt=""></img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- INCLUDE FOOTER -->
+  <div id="footer"></div>
+
+  <!-- INCLUDE SCRIPT LINK -->
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
+
+</html>

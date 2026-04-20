@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candy Avenue</title>
+  <link rel="stylesheet" href="/src/scss/style.scss" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="overlay has-fade"></div>
+    <nav class="mobile-nav container container--pall flex flex-jc-sb flex-ai-c hide-for-desktop">
+      <a href="index.html" class="header__logo">
+        <img src="/img/logo.svg" alt="Candy Avenue" />
+      </a>
+
+      <a href="/product-page.html?favorites=true" class="header__icon"><img src="/img/icon_Favorites.svg"
+          alt="Favorites" /></a>
+
+      <a id="btn-hamburger" href="#" class="header__toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="header__menu has-fade">
+        <a href="product-page.html">All</a>
+        <a href="product-page.html?isNew=true">New</a>
+        <a href="product-page.html?category=lollipops">Lollipops</a>
+        <a href="product-page.html?category=chocolate">Chocolate</a>
+        <a href="product-page.html?category=gummies">Gummies</a>
+        <a href="product-page.html?category=licorice">Licorice</a>
+      </div>
+    </nav>
+
+    <!-- Desktop header -->
+    <div class="header__desktop hide-for-mobile">
+      <div class="header-box container">
+        <a href="index.html" class="logo">
+          <img src="/img/logo.svg" alt="Candy Avenue" />
+        </a>
+
+        <form id="search-form" class="flex">
+          <div class="search-wrapper">
+            <input type="text" placeholder="Search for goodies..." />
+            <button type="submit" class="search-btn">
+              <img src="/img/icon_search.svg" alt="Search" />
+            </button>
+          </div>
+        </form>
+
+        <div id="icon-box">
+          <a href="/product-page.html?favorites=true"><img src="/img/icon_Favorites.svg" alt="Favorites" /></a>
+        </div>
+      </div>
+
+      <div class="nav__desktop">
+        <div class="nav-list">
+          <a href="product-page.html">All</a>
+          <a href="product-page.html?isNew=true">New</a>
+          <a href="product-page.html?category=lollipops">Lollipops</a>
+          <a href="product-page.html?category=chocolate">Chocolate</a>
+          <a href="product-page.html?category=gummies">Gummies</a>
+          <a href="product-page.html?category=licorice">Licorice</a>
+        </div>
+      </div>
+  </header>
+
+  <main class="container checkout container--pall">
+    <section class="checkout__page-title">
+      <h1>Your Candy Cart</h1>
+      <p>
+        All your candy picks, gathered in one sweet spot.<br />
+        Review your cart, fill in your details, and place your order to get
+        the sweets on its way!
+      </p>
+    </section>
+
+    <section class="checkout__layout">
+      <div class="checkout__left flex">
+        <section class="cart checkout__container" id="checkout-cart">
+          <div class="cart__header">
+            <span class="cart__header-text">Products</span>
+            <span class="cart__header-text">Price</span>
+            <span class="cart__header-text">Quantity</span>
+            <span class="cart__header-text">Sub-total</span>
+          </div>
+          <!-- JS -->
+        </section>
+
+        <section class="shipping-form checkout__container" id="shipping-form">
+          <h2>Shipping</h2>
+          <form class="flex">
+            <div class="shipping-form__row">
+              <div class="shipping-form__group">
+                <label for="firstName">First name</label>
+                <input id="firstName" type="text" placeholder="First name" required />
+              </div>
+
+              <div class="shipping-form__group">
+                <label for="lastName">Last name</label>
+                <input id="lastName" type="text" placeholder="Last name" required />
+              </div>
+            </div>
+
+            <div class="shipping-form__group">
+              <label for="address">Address</label>
+              <input id="address" type="text" placeholder="Street address" required />
+            </div>
+
+            <div class="shipping-form__row">
+              <div class="shipping-form__group">
+                <label for="country">Country</label>
+                <input id="country" type="text" placeholder="Country" required />
+              </div>
+
+              <div class="shipping-form__group">
+                <label for="city">City</label>
+                <input id="city" type="text" placeholder="City" required />
+              </div>
+              <div class="shipping-form__group">
+                <label for="zip">Zip code</label>
+                <input id="zip" type="text" placeholder="Zip code" required />
+              </div>
+            </div>
+
+            <div class="shipping-form__row">
+              <div class="shipping-form__group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" required />
+              </div>
+
+              <div class="shipping-form__group">
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" placeholder="Phone number" required />
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section class="payment checkout__container" id="payment-method">
+          <h2>Payment</h2>
+
+          <p class="payment__error">
+            * Please choose a payment method to place your order.
+          </p>
+
+          <div class="payment__methods">
+            <label class="payment__method">
+              <img src="/img/payment/payment-gandalf.svg" alt="Gandalf Credit" />
+              <div class="payment__method-radio">
+                <input type="radio" name="payment" value="gandalf" />
+                <span class="custom-radio"></span>
+                <span>Gandalf Credit</span>
+              </div>
+            </label>
+
+            <label class="payment__method">
+              <img src="/img/payment/payment-pennies.svg" alt="Silver Pennies" />
+              <div class="payment__method-radio">
+                <input type="radio" name="payment" value="pennies" />
+                <span class="custom-radio"></span>
+                <span>Silver Pennies</span>
+              </div>
+            </label>
+
+            <label class="payment__method">
+              <img src="/img/payment/payment-ring.svg" alt="The One Ring" id="the-one-ring" />
+              <div class="payment__method-radio">
+                <input type="radio" name="payment" value="ring" />
+                <span class="custom-radio"></span>
+                <span>The One Ring</span>
+              </div>
+            </label>
+          </div>
+        </section>
+      </div>
+
+      <aside class="summary checkout__container">
+        <h2>Your Sweet Summary</h2>
+
+        <div class="summary__row">
+          <span>Sub-total</span>
+          <span><span id="summary-subtotal">0</span> SEK</span>
+        </div>
+
+        <div class="summary__row">
+          <span>Shipping</span>
+          <span>Free</span>
+        </div>
+
+        <div class="summary__row">
+          <span>Discount</span>
+          <span>—</span>
+        </div>
+
+        <div class="summary__total flex flex-jc-sb">
+          <span>Total</span>
+          <span><span id="summary-total">0</span> SEK</span>
+        </div>
+
+        <button id="confirm-order-btn" class="cart-btn cart-btn--secondary summary__btn">
+          Place Order <img src="img/ArrowRight.svg" alt="Arrow right" />
+        </button>
+      </aside>
+    </section>
+  </main>
+
+  <!-- INCLUDE FOOTER -->
+  <div id="footer"></div>
+
+  <!-- INCLUDE SCRIPT LINK -->
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
+
+</html>

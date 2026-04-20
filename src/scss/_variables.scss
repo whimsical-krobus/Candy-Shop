@@ -1,0 +1,75 @@
+// color
+$color-primary-teal: #166479;
+$color-secondary-teal: #77c0d4;
+$color-accent-cherry: #e33f6d;
+$color-accent-pink: #e46a8c;
+$color-background-cream: #f7f1e9;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// old font sizes (change from these to new ones)
+$font-s: 0.875rem; // 14px
+$font-m: 1.125rem; // 18px
+$font-l: 1.25rem; // 20px
+$font-xl: 3.25rem; // 52px
+
+// new font sizes
+$fs-body-xsm: 0.75rem; //12px
+$fs-body-sm: 0.875rem; //14px
+$fs-body-lg: 1.125rem; //18px
+$fs-xs: 1.25rem; //20px
+$fs-sm: 1.5rem; //24px
+$fs-md: 2rem; //32px
+$fs-lg: 3rem; //48px
+$fs-xl: 4rem; //64px
+
+// font families
+$ff-h1: "Lobster", serif;
+$ff-special: "Lobster Two", serif;
+$ff-heading: "Playfair Display", serif;
+$ff-body: "Inter", sans-serif;
+
+//line height
+$line-height-sm: 1.2;
+$line-height-lg: 1.6;
+
+//general and horizontal padding
+$p-xs: 0.25rem;
+$p-sm: 0.5rem;
+$p-md: 1rem;
+$p-lg: 1.5rem;
+
+//container and vertical padding
+$p-xl: 4.375rem;
+$p-xxl: 6rem;
+
+//new span padding
+$new-p-horizontal: 2.25rem;
+$new-p-vertical: 1.5rem;
+
+//margins
+$m-sm: 0.5rem;
+$m-md: 1rem;
+$m-lg: 1.5rem;
+$m-xxl: 4rem;
+
+//general sizing
+$s-xs: 0.25rem;
+$s-sm: 0.5rem;
+$s-md: 1rem;
+$s-lg: 1.5rem;
+$s-xl: 2rem;
+$s-xxl: 2.5rem;
+
+//border radius
+$br-btn: 4px;
+$br-card: 8px;
+
+//box shadows
+$box-shadow-card: 0 3px 4px #d7ccbe;
+
+//font weights
+$fw-xs: 300;
+$fw-sm: 400;
+$fw-md: 600;
+$fw-lg: 700;

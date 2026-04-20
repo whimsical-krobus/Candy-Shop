@@ -1,0 +1,132 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+.footer {
+  background-color: var.$color-primary-teal;
+  color: var.$color-background-cream;
+  padding: 2.5rem;
+  text-align: center;
+
+  .container {
+    @include m.breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr /* 3fr */;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "logo links1 links2 cta"
+        "social links1 links2 copyright";
+      gap: 1rem;
+      justify-items: center /* start */;
+    }
+  }
+
+  a {
+    color: var.$color-background-cream;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    @include m.breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include m.breakpoint-up(large) {
+      grid-area: logo;
+    }
+  }
+
+  &__social {
+    @include m.breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include m.breakpoint-up(large) {
+      grid-area: social;
+      align-self: end;
+    }
+
+    a {
+      display: inline-block;
+      height: 1.25rem;
+
+      svg path {
+        transition: fill 150ms ease-in-out;
+      }
+
+      &:hover svg path {
+        fill: var.$color-accent-pink;
+      }
+    }
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9375rem;
+
+    @include m.breakpoint-up(large) {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &.col1 {
+      @include m.breakpoint-up(large) {
+        grid-area: links1;
+      }
+    }
+
+    &.col2 {
+      @include m.breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+
+      @include m.breakpoint-up(large) {
+        grid-area: links2;
+      }
+    }
+
+    a {
+      line-height: 2.25;
+      transition: color 150ms ease-in-out;
+
+      &:hover {
+        color: var.$color-accent-pink;
+      }
+    }
+  }
+
+  &__cta {
+    @include m.breakpoint-up(large) {
+      grid-area: cta;
+      text-align: right;
+      justify-self: end;
+    }
+
+    a.button {
+      @include m.breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 0.8125rem;
+
+    @include m.breakpoint-up(large) {
+      grid-area: copyright;
+      //align-self: end;
+      justify-self: center;
+    }
+  }
+
+  .attribution {
+    margin-top: 4rem;
+    font-size: 0.875rem;
+  }
+}

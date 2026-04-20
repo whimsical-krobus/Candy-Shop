@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": "licorice-twists-salty",
+      "name": "Licorice Twists",
+      "category": "licorice",
+      "variant": "Salty",
+      "description": "Classic salty licorice twists, soft and chewy with a rich, slightly tangy flavor. Each twist is crafter to provide the perfect balance of traditional licorice taste and a gentle hint of saltiness. Perfect for those who enjoy nostalgic, old-fashioned sweets with a bold character. Ideal for a small treat or sharing with friends!",
+      "price": 22,
+      "weight": 50,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/licorice_twists.png"
+    },
+    {
+      "id": "licorice-drops-sweet",
+      "name": "Licorice Drops",
+      "category": "licorice",
+      "variant": "Classic",
+      "description": "Classic licorice drops, soft and chewy with a rich, slightly sweet flavor. Each piece is crafted to deliver the timeless taste of traditional licorice, perfect for a nostalgic treat or sharing with friends. Ideal for those who love authentic old-fashioned sweets.",
+      "price": 22,
+      "weight": 50,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/licorice_drops.png"
+    },
+    {
+      "id": "licorice-sticks-filled",
+      "name": "Filled Licorice Sticks",
+      "category": "licorice",
+      "variant": "Filled",
+      "description": "Salted licorice sticks with a sweet raspberry filling, soft and chewy with a rich, nostalgic flavor. Each stick blends the bold taste of traditional licorice with a fruity center for a simple, old-fashioned indulgence.",
+      "price": 25,
+      "weight": 50,
+      "currency": "SEK",
+      "isNew": true,
+      "image": "/img/products/filled_licorice_sticks.png"
+    },
+    {
+      "id": "berry-bites-raspberry",
+      "name": "Berry Bites",
+      "category": "gummies",
+      "variant": "Raspberry",
+      "description": "Soft raspberry gummies with a delicate fruity flavor, chewy and sweet with a nostalgic taste. Each piece delivers the classic berry goodness that brings back memories of old-fashioned sweets.",
+      "price": 30,
+      "weight": 70,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/gummies_raspberry.png"
+    },
+    {
+      "id": "berry-bites-blackberry",
+      "name": "Berry Bites",
+      "category": "gummies",
+      "variant": "Blackberry",
+      "description": "Chewy blackberry gummies, rich in flavor and soft in texture. Each gummy captures the classic taste of ripe berries, reminiscent of timeless retro candy.",
+      "price": 30,
+      "weight": 70,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/gummies_blackberry.png"
+    },
+    {
+      "id": "berry-bites-strawberry",
+      "name": "Berry Bites",
+      "category": "gummies",
+      "variant": "Strawberry",
+      "description": "Sweet strawberry gummies, soft and chewy with a gentle fruity flavor. Each piece offers the nostalgic charm of traditional berry sweets, crafted for a simple indulgence.",
+      "price": 30,
+      "weight": 70,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/gummies_strawberry.png"
+    },
+    {
+      "id": "lollipop-strawberry",
+      "name": "Twisties",
+      "category": "lollipops",
+      "variant": "Strawberry Twist",
+      "description": "Sweet strawberry lollipop with a chewy, flavorful center. Each piece delivers the classic taste of traditional fruit candy, perfect for enjoying a nostalgic candy moment.",
+      "price": 15,
+      "weight": 35,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/lollipop_strawberry.png"
+    },
+    {
+      "id": "lollipop-blueberry",
+      "name": "Twisties",
+      "category": "lollipops",
+      "variant": "Blueberry Blast",
+      "description": "Large blueberry lollipop, sweet and juicy with a soft, chewy center. Each lollipop captures the nostalgic taste of classic fruit candy, crafted for a timeless retro treat.",
+      "price": 15,
+      "weight": 35,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/lollipop_blueberry.png"
+    },
+    {
+      "id": "lollipop-orange",
+      "name": "Twisties",
+      "category": "lollipops",
+      "variant": "Orange Zing",
+      "description": "Zesty orange lollipop, soft and chewy with a bright, fruity flavor. Each lollipop offers the retro charm of old-fashioned fruit sweets.",
+      "price": 15,
+      "weight": 35,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/lollipop_orange.png"
+    },
+    {
+      "id": "choco-bar-caramel",
+      "name": "Choco Bar",
+      "category": "chocolate",
+      "variant": "Caramel",
+      "description": "Milk chocolate bar with a rich caramel filling, soft and indulgent. Each bite delivers the classic taste of traditional chocolate and gooey caramel, perfect for a nostalgic candy treat.",
+      "price": 20,
+      "weight": 70,
+      "currency": "SEK",
+      "isNew": true,
+      "image": "/img/products/choco_bar_caramel.png"
+    },
+    {
+      "id": "choco-bar-mint",
+      "name": "Choco Bar",
+      "category": "chocolate",
+      "variant": "Mint",
+      "description": "Milk chocolate bar with a smooth mint cream filling, soft and flavorful. Each piece combines the classic chocolate taste with a refreshing hint of mint, crafted for a timeless retro experience.",
+      "price": 20,
+      "weight": 70,
+      "currency": "SEK",
+      "isNew": false,
+      "image": "/img/products/choco_bar_mint.png"
+    },
+    {
+      "id": "choco-bar-nougat",
+      "name": "Choco Bar",
+      "category": "chocolate",
+      "variant": "Nougat",
+      "description": "Milk chocolate bar with a creamy nougat filling, soft and satisfying. Each bar captures the classic flavor of traditional chocolate and nougat, reminiscent of old-fashioned candy.",
+      "price": 20,
+      "weight": 70,
+      "currency": "SEK",
+      "isNew": true,
+      "image": "/img/products/choco_bar_nougat.png"
+    }
+  ]
+}

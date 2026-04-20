@@ -1,0 +1,154 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+.product-details {
+  flex-direction: column;
+
+  background-color: var.$color-white;
+  text-align: left;
+  box-shadow: var.$box-shadow-card;
+
+  padding-bottom: var.$p-lg;
+
+  @media screen and (min-width: 69.375rem) {
+    border-radius: var.$br-card;
+  }
+
+  &__img {
+    background-color: var.$color-background-cream;
+    border-radius: var.$br-card;
+    max-width: 100%;
+
+    @include m.breakpoint-up(medium) {
+      max-width: 45%;
+    }
+  }
+
+  &__title {
+    color: var.$color-accent-cherry;
+    @include m.text-style-heading();
+    font-size: var.$fs-lg;
+
+    @include m.breakpoint-up(medium) {
+      font-size: var.$fs-xl;
+    }
+  }
+
+  .description,
+  .ingredients {
+    margin-bottom: var.$m-lg;
+    &__heading {
+      @include m.text-style-subheading-sm();
+    }
+  }
+
+  .description {
+    &__text {
+      margin: 0;
+
+      font-size: var.$fs-body-sm;
+    }
+  }
+
+  .ingredients {
+    &__list {
+      font-size: var.$fs-body-sm;
+
+      list-style: "- ";
+      margin-left: var.$m-md;
+      @include m.text-style-body();
+
+      b {
+        font-weight: var.$fw-md;
+      }
+    }
+  }
+
+  .product-actions {
+    flex-direction: column;
+    align-items: start;
+
+    gap: var.$s-sm;
+
+    @include m.breakpoint-up(large) {
+      flex-direction: row;
+      gap: var.$s-md;
+    }
+
+    &__cta {
+      width: 100%;
+      gap: var.$s-md;
+    }
+
+    &__add {
+      flex: 1;
+      max-width: 20rem;
+    }
+
+    .quantity {
+      border: solid 2px var.$color-primary-teal;
+      border-radius: var.$br-btn;
+      padding: var.$p-xs var.$p-md;
+
+      gap: var.$s-md;
+
+      &__btn {
+        background: none;
+        border: none;
+        color: var.$color-primary-teal;
+
+        font-size: var.$fs-sm;
+
+        @include m.text-style-body();
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.05);
+          color: var.$color-accent-pink;
+        }
+      }
+
+      &__text {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// back button
+.back {
+  display: inline-flex;
+  align-items: center;
+  align-self: start;
+  margin: var.$m-md 0;
+
+  background: none;
+  border: none;
+  color: var.$color-primary-teal;
+  text-transform: uppercase;
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+
+  @include m.text-style-body-bold();
+
+  img {
+    vertical-align: middle;
+    height: var.$s-lg;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.product {
+  flex-direction: column;
+  align-items: start;
+
+  @include m.breakpoint-up(medium) {
+    flex-direction: row;
+    gap: var.$s-lg;
+  }
+}

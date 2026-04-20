@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candy Avenue</title>
+  <link rel="stylesheet" href="/src/scss/style.scss" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- INCLUDE HEADER -->
+  <div id="header"></div>
+
+  <main class="flex flex-ai-c">
+
+    <section class="hero container">
+      <div class="hero__img">
+        <div class="flex flex-ai-c hero__text container container--pall">
+          <h1>
+            Classic Candy, <br />
+            Sweet as Ever
+          </h1>
+          <h2>
+            Timeless treats inspired <br />
+            by the 1950's
+          </h2>
+          <button onclick="document.location = 'product-page.html'" class="cart-btn cart-btn--secondary hero__btn">
+            Shop all <img src="img/ArrowRight.svg" alt="Arrow right" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2>Popular categories</h2>
+      <div id="category-btns" class="flex">
+        <button onclick="document.location = 'product-page.html?category=chocolate'"
+          class="category-btns">Chocolate</button>
+        <button onclick="document.location = 'product-page.html?category=gummies'"
+          class="category-btns">Gummies</button>
+        <button onclick="document.location = 'product-page.html?category=licorice'"
+          class="category-btns">Licorice</button>
+      </div>
+    </section>
+
+    <!-- <section class="new-arrivals">
+      <h2>New arrivals</h2>
+
+      <section class="shop flex container--px">
+        <div class="shop__new-arrivals">
+          <article class="card flex flex-ai-c">
+            <img class="card__img" src="/img/products/filled_licorice_sticks.png" alt="Filled Licorice Sticks - Filled" data-product-id="licorice-sticks-filled">
+            <div class="detail-container flex flex-jc-sb">
+              <h3 class="card__title">Filled Licorice Sticks</h3>
+              <p class="card__price">25 kr</p>
+              <div class="btn-container flex">
+                <button class="card__btn cart-btn cart-btn--primary">Add to cart
+                  <img src="/img/icon_ShoppingCartSimple.svg" alt="Shopping cart"></button>
+                  <img class="favorite" src="/img/icon_wishlist_deafult.svg" alt="Favorite icon">
+              </div>
+            </div>
+            <span class="new">New</span>
+          </article>
+          <article class="card flex flex-ai-c">
+            <img class="card__img" src="/img/products/choco_bar_caramel.png" alt="Choco Bar - Caramel" data-product-id="choco-bar-caramel">
+            <div class="detail-container flex flex-jc-sb">
+              <h3 class="card__title">Choco Bar - Caramel</h3>
+              <p class="card__price">20 kr</p>
+              <div class="btn-container flex">
+                <button class="card__btn cart-btn cart-btn--primary">Add to cart
+                  <img src="/img/icon_ShoppingCartSimple.svg" alt="Shopping cart">
+                </button>
+                <img class="favorite" src="/img/icon_wishlist_deafult.svg" alt="Favorite icon">
+              </div>
+            </div>
+            <span class="new">New</span>
+          </article>
+          <article class="card flex flex-ai-c">
+            <img class="card__img" src="/img/products/choco_bar_nougat.png" alt="Choco Bar - Nougat" data-product-id="choco-bar-nougat">
+            <div class="detail-container flex flex-jc-sb">
+              <h3 class="card__title">Choco Bar - Nougat</h3>
+              <p class="card__price">20 kr</p><div class="btn-container flex">
+                <button class="card__btn cart-btn cart-btn--primary">Add to cart
+                  <img src="/img/icon_ShoppingCartSimple.svg" alt="Shopping cart">
+                </button>
+                <img class="favorite" src="/img/icon_wishlist_deafult.svg" alt="Favorite icon">
+              </div>
+            </div>
+            <span class="new">New</span>
+          </article>
+        </div>
+      </section>
+
+      <button onclick="document.location = 'product-page.html'" class="cart-btn cart-btn--secondary hero__btn">
+        Shop all <img src="img/ArrowRight.svg" alt="Arrow right" />
+      </button>
+    </section> -->
+  </main>
+
+  <!-- INCLUDE FOOTER -->
+  <div id="footer"></div>
+
+  <!-- INCLUDE SCRIPT LINK -->
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
+
+</html>
